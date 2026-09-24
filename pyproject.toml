@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dl-portfolio"
+version = "0.1.0"
+description = "Miguel Miranda — deep learning portfolio monorepo (CPU-friendly PyTorch OOP template)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["template/src"]
+
+[tool.pytest.ini_options]
+testpaths = ["template/tests", "tests"]
+pythonpath = ["template/src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

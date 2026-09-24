@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Testing / coverage / lint
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+secrets/
+
+# Training artifacts & checkpoints (keep folder placeholders)
+artifacts/**
+!artifacts/.gitkeep
+**/artifacts/**
+!**/artifacts/
+!**/artifacts/.gitkeep
+checkpoints/
+**/checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+runs/
+**/runs/
+wandb/
+mlruns/
+lightning_logs/
+
+# Large / local datasets (download separately; document steps in project READMEs)
+data/raw/
+data/processed/
+**/data/raw/
+**/data/processed/
+datasets/
+**/datasets/
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Conda
+.conda/
